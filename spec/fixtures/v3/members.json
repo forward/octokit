@@ -1,0 +1,14 @@
+[
+  {
+    "login": "JonnyKnoxville",
+    "id": 1,
+    "gravatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "url": "https://api.github.com/users/JonnyKnoxville"
+  },
+  {
+    "login": "sferik",
+    "id": 1,
+    "gravatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "url": "https://api.github.com/users/JonnyKnoxville"
+  }
+]

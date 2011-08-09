@@ -36,6 +36,10 @@ module Octokit
         get("/api/v2/json/organizations/#{org}/public_members", options)['users']
       end
       alias :org_members :organization_members
+      
+			def organization_all_members(org, options={})
+				get("/orgs/#{org}/members",options,3)
+		  end		
 
       def organization_teams(org, options={})
         get("/api/v2/json/organizations/#{org}/teams", options)['teams']

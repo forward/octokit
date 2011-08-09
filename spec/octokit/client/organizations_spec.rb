@@ -92,6 +92,14 @@ describe Octokit::Client::Organizations do
     end
 
   end
+  
+  describe ".organization_all_members" do
+	  it "should return all members, public or concealed of an organization" do
+		  stub_get("https://api.github.com/orgs/codeforamerica/members").to_return(:body => fixture("v3/members.json"))
+		 	users = @client.organization_all_members("codeforamerica")
+		 	users.first.login.should == "JonnyKnoxville"
+		 end
+	end
 
   describe ".organization_teams" do
 
